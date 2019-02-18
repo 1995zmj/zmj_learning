@@ -4,17 +4,16 @@ var arr = [2, 238, 35, 75, 32];
 function bubbleSort(arr) {
     var len = arr.length;
     for (var i = 0; i < len - 1; i++) {
-        for (var j = i + 1; j < len; j++) {
-            if (arr[i] > arr[j]) {
-                var temp = arr[i];
-                arr[i] = arr[j];
+        for (var j = 0; j < len - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {        // 相邻元素两两对比
+                var temp = arr[j + 1];        // 元素交换
+                arr[j + 1] = arr[j];
                 arr[j] = temp;
             }
         }
     }
     return arr;
-};
-
+}
 function selectionSort(arr) {
     var len = arr.length;
     for (var i = 0; i < len - 1; i++) {
@@ -50,16 +49,16 @@ function shellSort(arr) {
     var len = arr.length;
 
     var gap = 1;
-    while(gap< len/3){
-        gap = gap*3 +1;
+    while (gap < len / 3) {
+        gap = gap * 3 + 1;
     }
-    for (gap; gap >0; gap = Math.floor(gap/3)) {
-        for(var i = gap;i<len;i++){
+    for (gap; gap > 0; gap = Math.floor(gap / 3)) {
+        for (var i = gap; i < len; i++) {
             var temp = arr[i];
-            for(var j = i - gap;j>0&&arr[j]>temp;j-=gap){
-                arr[j+gap]=arr[j];
+            for (var j = i - gap; j > 0 && arr[j] > temp; j -= gap) {
+                arr[j + gap] = arr[j];
             }
-            arr[j+gap]=temp;
+            arr[j + gap] = temp;
         }
     }
     return arr;
