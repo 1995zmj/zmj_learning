@@ -11,3 +11,28 @@ c++
 在b站学习 udemy课程
 推荐
 https://space.bilibili.com/87720684?spm_id_from=333.788.b_765f7570696e666f.2
+
+
+材质
+材质实例
+材质集
+
+
+# 建立项目注意事项
+* 目录结构（参考）
+    >[Gamemakin UE4工程规范](https://github.com/skylens-inc/ue4-style-guide/blob/master/README.md)
+* 设置默认关卡
+    > 项目设置 -> 地图和模式
+    >> 设置默认地图 和 默认模式
+* 设置游戏模式相关的内容
+
+材质问题还是很大
+
+游戏中
+和ui 的用的材质不一样
+
+ui如何用蓝图去动态添加
+
+
+widget   中图片要用材质  
+
