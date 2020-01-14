@@ -1,0 +1,3 @@
+Material Icon Theme
+
+TinyPNG

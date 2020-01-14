@@ -1,4 +1,5 @@
-坐标转换
-* `Set Native Size` 作用
-* 对于UI的图片把 `Texture Type` 设置成 `Sprite(2D and UI)`
-* `Canvas Scaler(Script)` 画布缩放器，与适配相关
+要添加Cinemachine软件包：
+1.   在Unity编辑器中打开程序包管理器（菜单：窗口> 程序包管理器）。
+2.   查找条目Cinemachine 并点击安装在右下角。
+
+3.   “ 安装” 按钮将变为“正在安装” ，并且在软件包完成导入后，它将变为“最新” 。现在您有了Cinemachine ，它是用于在Project中设置和移动摄像机的工具。 
