@@ -24,3 +24,10 @@ Debug.Log(nameof(abc));
     return (this.x == other.x) && (this.y == other.y);
 }
 ```
+
+# C#个人规范
+
+[参考](https://www.cnblogs.com/cjm123/p/8571264.html)
+变量都定义成私有
+
+* 比较难以理解的函数要添加文档注释
