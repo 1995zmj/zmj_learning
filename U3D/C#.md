@@ -25,6 +25,13 @@ Debug.Log(nameof(abc));
 }
 ```
 
+```c#
+EnumTest e = new EnumTest();
+    string[] values = System.Enum.GetNames(e.GetType());
+```
+
+sealed （C#中的修饰符）
+
 # C#个人规范
 
 [参考](https://www.cnblogs.com/cjm123/p/8571264.html)
